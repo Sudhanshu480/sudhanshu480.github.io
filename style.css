@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Satisfy&family=Source+Code+Pro&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(232, 245, 192);
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 8px;
+
+  }
+  .logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+  }
+
+nav{  
+    background-color: #212020;
+    width: 100%;
+    position: fixed;
+    min-height: 6vh;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    }
+
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px; 
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: chocolate;
+    }
+
+.Home{
+    background: url('photos/Web1.jpeg');
+    min-height: 100vh;
+    width: 100%;
+    height: 78vh;
+    /* margin: 40px auto;  This creates a gap between images  */
+    display: flex; 
+    justify-content: space-around;
+    
+  
+}
+
+.Home img{
+    width: 350px;
+    border-radius: 73px;
+    /* margin: 85px 20px; */
+    border: 2px solid goldenrod;
+    margin-top: 200px;
+}
+
+.homebox{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Flamenco", cursive;
+}
+.hello{
+    font-size: 90px;
+    font-style: bold;
+    /* margin: 0px auto; */
+    
+}
+.name{
+    font-family: 'Flamenco', cursive;
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0px auto;
+
+}
+.degree{
+    font-weight: 400;
+    font-size: 41px; 
+    margin: 0px auto;
+
+}
+.college{
+    font-family: 'Flamenco', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    margin: 0px auto;
+}
+
+
+.aboutMe{
+    min-height: 100vh;
+    width: 100%;
+    height: 78vh;
+    font-family: "Flamenco", cursive;
+    font-size: 40px;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: rgb(138, 181, 218);
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3vw;
+  }
+
+span{
+    font-size: 30px;
+    font-family: cursive;
+    padding: 18px;
+    /* margin: 10px 6px; */
+}
+
+.aboutMe img{
+    width: 445px;
+    height: 370px;
+    margin: 20px 20px;
+    
+}
+
+h1{
+    margin-top: 22px;
+    padding: 8px;
+    color: beige;
+}
+
+.photo2{
+    margin-top: 175px;
+    margin-left: -305px;
+}
+
+.skills{
+    width: 100%;
+    height: 78vh;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206 118 86);
+    text-align: center;
+    font-family: "Flamenco", cursive;
+    font-size: 40px;
+    padding: 3%;
+    background-image: url('photos/bg2.jpg');
+    background-size: cover;
+}
+
+
+.skill-container{
+    margin: 0 auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vh;
+    padding-bottom: 2vh;
+}
+
+.skillinfo{
+    background-color: #ffffff8c;;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 120px;
+    /* width: 100px; */
+    /* padding: auto; */
+    
+    /* margin: 6px; */
+}
+
+.skillinfo:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .projects{
+    background-image: url('photos/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    height: 78vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Flamenco", cursive;
+    font-size: 40px;
+    padding: 3%;
+  }
+
+  .project-container{
+    margin: 0px auto;
+    width: 93vw;
+    height: 75vh;
+    font-size: 30px;
+    padding-bottom: 2vh;
+    background-color: #7a37a785;
+    /* color: #ffeb3b; */
+    font-family: cursive;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .project-container img{
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .projects p{
+    background-color: #7a37a785;
+  }
+
+
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: brown;
+    font-size: 25px;
+    font-family: "Flamenco", cursive;
+    align-items: center;
+  }
+
+  .contacts .contact-logo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* align-items: center; */
+    font-family: cursive;
+  }
+
+  .connect-image {
+    height: 45px;
+    width: auto;
+  }
+
+  .contacts .contact-logo img {
+    transition: 0.1s ease-in-out;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .contacts .contact-logo img:hover {
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+  }
+
+  /* .text{
+    margin-top: 5px;
+  } */
+
